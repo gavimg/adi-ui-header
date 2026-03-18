@@ -1,6 +1,6 @@
 ﻿import React from 'react';
-import { User } from '@adi/types';
-import { colors, typography } from '@adi/design-system';
+import { User } from '@gadagi/types';
+import { colors, typography } from '@gadagi/design-system';
 import { UserMenu } from './UserMenu';
 
 interface HeaderProps {
@@ -11,7 +11,7 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({
-  appName = 'Adi Platform',
+  appName = 'gadagi Platform',
   user,
   onLogout = () => {},
   logo,

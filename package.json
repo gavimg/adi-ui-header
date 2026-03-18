@@ -1,7 +1,7 @@
 ﻿{
-  "name": "@adi/ui-header",
+  "name": "@gadagi/ui-header",
   "version": "1.0.0",
-  "description": "Top header component for adi micro-frontends",
+  "description": "Top header component for gadagi micro-frontends",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -19,15 +19,15 @@
     "prepublishOnly": "npm run build"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "access": "public"
   },
   "peerDependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "dependencies": {
-    "@adi/types": "^1.0.0",
-    "@adi/design-system": "^1.0.0"
+    "@gadagi/types": "^1.0.1",
+    "@gadagi/design-system": "^1.0.1"
   },
   "devDependencies": {
     "@types/react": "^19.0.0",

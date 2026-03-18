@@ -12,13 +12,13 @@ module.exports = {
   externals: {
     react:              { commonjs: 'react', commonjs2: 'react', amd: 'React', root: 'React' },
     'react-dom':        { commonjs: 'react-dom', commonjs2: 'react-dom' },
-    '@adi/types':       { commonjs: '@adi/types', commonjs2: '@adi/types' },
-    '@adi/design-system': { commonjs: '@adi/design-system', commonjs2: '@adi/design-system' },
+    '@gadagi/types':       { commonjs: '@gadagi/types', commonjs2: '@gadagi/types' },
+    '@gadagi/design-system': { commonjs: '@gadagi/design-system', commonjs2: '@gadagi/design-system' },
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
-    library: { name: 'AdiUiHeader', type: 'umd' },
+    library: { name: 'gadagiUiHeader', type: 'umd' },
     globalObject: 'this',
     clean: true,
   },

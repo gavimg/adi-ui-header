@@ -1,6 +1,6 @@
 ﻿import React, { useState } from 'react';
-import { User } from '@adi/types';
-import { Button, colors, typography } from '@adi/design-system';
+import { User } from '@gadagi/types';
+import { Button, colors, typography } from '@gadagi/design-system';
 
 interface UserMenuProps {
   user: User;
