@@ -1,7 +1,7 @@
 ﻿import React, { useState } from 'react';
 import { User } from '@gadagi/types';
 import { Button } from '@gadagi/design-system';
-import './UserMenu.css';
+import './UserMenu.scss';
 
 interface UserMenuProps {
   user: User;

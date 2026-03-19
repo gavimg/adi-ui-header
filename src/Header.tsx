@@ -1,7 +1,7 @@
 ﻿import React from 'react';
 import { User } from '@gadagi/types';
 import { UserMenu } from './UserMenu';
-import './Header.css';
+import './Header.scss';
 
 interface HeaderProps {
   appName?: string;

@@ -17,17 +17,17 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: #4a3fb5;
+  background: var(--g-color-primary-500);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.875rem;
-  font-weight: 600;
+  font-size: var(--g-font-size-sm);
+  font-weight: var(--g-font-weight-semibold);
   color: #fff;
 }
 
 .user-menu__name {
-  font-size: 0.875rem;
+  font-size: var(--g-font-size-sm);
 }
 
 .user-menu__dropdown {
@@ -36,7 +36,7 @@
   top: 100%;
   margin-top: 8px;
   background: #fff;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--g-color-neutral-200);
   border-radius: 8px;
   padding: 8px;
   min-width: 160px;
@@ -46,19 +46,19 @@
 
 .user-menu__profile {
   padding: 8px 12px;
-  border-bottom: 1px solid #ebedef;
+  border-bottom: 1px solid var(--g-color-neutral-100);
   margin-bottom: 4px;
 }
 
 .user-menu__profile-name {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: #1e293b;
+  font-size: var(--g-font-size-sm);
+  font-weight: var(--g-font-weight-medium);
+  color: var(--g-color-neutral-800);
   margin: 0;
 }
 
 .user-menu__profile-email {
-  font-size: 0.75rem;
-  color: #94a3b8;
+  font-size: var(--g-font-size-xs);
+  color: var(--g-color-neutral-400);
   margin: 0;
 }
