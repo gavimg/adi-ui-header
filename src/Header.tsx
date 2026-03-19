@@ -1,7 +1,7 @@
 ﻿import React from 'react';
 import { User } from '@gadagi/types';
-import { colors, typography } from '@gadagi/design-system';
 import { UserMenu } from './UserMenu';
+import './Header.css';
 
 interface HeaderProps {
   appName?: string;
@@ -17,30 +17,13 @@ export const Header: React.FC<HeaderProps> = ({
   logo,
 }) => {
   return (
-    <header
-      style={{
-        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-        padding: '0 1.5rem', height: '56px',
-        background: colors.neutral[800],
-        borderBottom: `1px solid ${colors.neutral[900]}`,
-        position: 'sticky', top: 0, zIndex: 50,
-      }}
-    >
-      <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+    <header className="ui-header">
+      <div className="ui-header__brand">
         {logo}
-        <span
-          style={{
-            fontSize: typography.fontSize.lg,
-            fontWeight: typography.fontWeight.semibold,
-            color: '#fff',
-            letterSpacing: '-0.01em',
-          }}
-        >
-          {appName}
-        </span>
+        <span className="ui-header__title">{appName}</span>
       </div>
 
-      <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+      <div className="ui-header__actions">
         {user && <UserMenu user={user} onLogout={onLogout} />}
       </div>
     </header>
