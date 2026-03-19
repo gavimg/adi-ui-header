@@ -1,22 +1,13 @@
-﻿{
+{
   "name": "@gadagi/ui-header",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Top header component for gadagi micro-frontends",
   "main": "dist/index.js",
-  "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.esm.js",
-      "require": "./dist/index.js"
-    }
-  },
   "files": ["dist"],
   "scripts": {
     "build": "webpack --mode production && tsc -p tsconfig.build.json --emitDeclarationOnly",
-    "dev": "webpack --mode development --watch",
-    "prepublishOnly": "npm run build"
+    "dev": "webpack --mode development --watch"
   },
   "publishConfig": {
     "access": "public"
